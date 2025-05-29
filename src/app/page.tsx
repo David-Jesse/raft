@@ -9,10 +9,16 @@ import cnn from "../assets/images/cnn.png";
 import reuters from "../assets/images/reuters.png";
 import smart from "../assets/images/smart.png";
 import seamless from "../assets/images/seamless.png";
+import wade from "../assets/images/wade.png";
+import planning from "../assets/images/planning.png";
+import transaction from "../assets/images/transaction.png";
+import banknotes from "../assets/images/banknotes.png";
+import circleStack from "../assets/images/circleStack.png";
+import arrowsLeft from "../assets/images/arrowsLeft.png";
 
 export default function Home() {
   return (
-    <div className="bg-[#131313] min-h-screen w-full pt-20">
+    <div className="bg-black min-h-screen w-full pt-20">
       <div className="flex flex-col mx-auto w-[90%]">
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center gap-6">
@@ -81,18 +87,126 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex gap-6 py-12 mx-auto justify-center">
-        <div className="w-[65%] border-2 p-5 rounded">
-          <div>
+      {/* Seamless payments & smart investing */}
+      <div className="flex py-12 gap-6 justify-center">
+        <div className="w-[40%] border bg-[#131313] bg-base-300 border-gray-700 py-10 px-4 rounded">
+          <div className="flex items-center justify-center pb-10">
+            <Image
+              src={smart}
+              alt="Smart investments"
+              className="object-contain"
+            />
+          </div>
+
+          <h4 className="text-white text-3xl mb-4">Seamless Payments</h4>
+          <p className="text-white text-base font-light w-[90%]">
+            Enjoy secure, seamless transactions that make managing your money a
+            breeze
+          </p>
+        </div>
+
+        <div className="w-[30%] border bg-base-300 border-gray-700 p-3 rounded bg-[#131313]">
+          <div className="flex items-center pt-8 justify-center pb-10">
             <Image
               src={seamless}
               alt="Seamless Payments"
               className="object-contain"
             />
           </div>
-         
-         <h4 className="text-white text-3xl">Seamless Payment</h4>
-         <p className="text-white text-base">Enjoy secure, seamless transactions that make managing your money a breeze</p> 
+
+          <h4 className="text-white text-3xl mb-4">Smart Investing</h4>
+          <p className="text-white text-base font-light w-[90%]">
+            Grow your wealth confidently with our personalized investment
+            solutions, tailored to your financial goals.
+          </p>
+        </div>
+      </div>
+
+      {/* Wealth Management & Financial Planning */}
+      <div className="flex gap-6 justify-center">
+        <div className="w-[30%] p-6 border border-gray-700 rounded bg-base-600 bg-[#131313]">
+          <div className="flex pb-5 items-center justify-center pt-10">
+            <Image src={wade} alt="Wade Warren" className="object-contain" />
+          </div>
+          <div className="flex flex-col justify-center mx-auto pt-10">
+            <h4 className="text-white text-3xl mb-4">Wealth Management</h4>
+            <p className="text-white text-base font-light w-[90%]">
+              Make informed decisions for your financial future with our wealth
+              management expertise.
+            </p>
+          </div>
+        </div>
+
+        <div className="w-[40%] p-6 border border-gray-700 rounded bg-base-600 bg-[#131313]">
+          <div className="flex item-center justify-center pb-5 pt-10">
+            <Image src={planning} alt="Planning" className="object-contain" />
+          </div>
+          <div className=" flex flex-col justify-center">
+            <h4 className="text-white text-3xl mb-4">Financial Planning</h4>
+            <p className="text-white text-base font-light w-[90%]">
+              Achieve your financial dreams with our comprehensive financial
+              planning services, guidung you toward a secure future.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Your way to financial freedom */}
+      <div className="flex flex-col justify-center items-center py-12 mx-auto">
+        <h2 className="text-7xl text-white w-[60%] text-center mb-6">
+          Your Financial Freedom, Your Way
+        </h2>
+        <p className="text-white text-xl font-light w-[44%] text-center">
+          We believe that managing your finances should be effortless and
+          cost-effective. That's why we offer you the freedom you deserve
+        </p>
+      </div>
+
+      {/* Transaction images */}
+      <div className="mx-auto py-12 w-[90%]">
+        <Image
+          src={transaction}
+          alt="Transaction"
+          className="object-contain"
+          width={2000}
+          height={1000}
+        />
+      </div>
+
+      {/* Perks */}
+      <div className="flex py-10 gap-2 w-[90%] mx-auto">
+        <div className="flex flex-col gap-4">
+          <div className="flex gap-3">
+            <Image src={banknotes} alt="Banknotes" className="object-contain" />
+            <p className="text-2xl text-white">No minimum balance fees</p>
+          </div>
+          <p className="text-white text-base font-light">
+            Say goodbye to minimum balance fees. Your account, your balance-no
+            hidden charges.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="flex gap-3">
+            <Image
+              src={circleStack}
+              alt="Circle Stack"
+              className="object-contain"
+            />
+            <p className="text-2xl text-white">No monthly fees</p>
+          </div>
+          <p className="text-white text-base font-light">
+            Bank with us without worrying about monthly fees. Keep more of your
+            money where it belongs- in your account.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="flex gap-3">
+            <Image src={arrowsLeft} alt='Arrows left and Right' className="object-contain"/>
+            <p className="text-2xl text-white">No bank transfer fees</p>
+          </div>
+          <p className="text-white text-base font-light">Seamlessly transfer funds without the extra cost. Send and recieve money with zero bank transfer fees.</p>
         </div>
       </div>
     </div>

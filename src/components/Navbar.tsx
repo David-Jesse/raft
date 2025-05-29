@@ -5,7 +5,7 @@ import navLogo from "../assets/images/navLogo.png";
 
 export default function Navbar() {
   return (
-    <div className="w-full bg-[#131313]">
+    <div className="w-full bg-black">
       <div className=" w-[90%] mx-auto py-6 flex items-center justify-between">
         {/* Logo here */}
         <Link href='/' className="text-white flex items-center text-2xl gap-1">
