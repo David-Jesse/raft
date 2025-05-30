@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FAQSection from "@/components/FAQSection";
 import Link from "next/link";
 import leftArrow from "../assets/images/leftArrow.png";
 import chinaBlack from "../assets/images/chinaBlack.png";
@@ -15,6 +16,16 @@ import transaction from "../assets/images/transaction.png";
 import banknotes from "../assets/images/banknotes.png";
 import circleStack from "../assets/images/circleStack.png";
 import arrowsLeft from "../assets/images/arrowsLeft.png";
+import investBetter from "../assets/images/investBetter.png";
+import spendBetter from "../assets/images/spendBetter.png";
+import dwf from "../assets/images/dwf.png";
+import cardAtm from "../assets/images/cardAtm.png";
+import cTech from "../assets/images/cTech.png";
+import persona from "../assets/images/persona.png";
+import security from "../assets/images/security.png";
+import TestimonialSection from "@/components/TestiomonialSection";
+import Footer from "@/components/Footer";
+
 
 export default function Home() {
   return (
@@ -203,12 +214,198 @@ export default function Home() {
 
         <div className="flex flex-col gap-4">
           <div className="flex gap-3">
-            <Image src={arrowsLeft} alt='Arrows left and Right' className="object-contain"/>
+            <Image
+              src={arrowsLeft}
+              alt="Arrows left and Right"
+              className="object-contain"
+            />
             <p className="text-2xl text-white">No bank transfer fees</p>
           </div>
-          <p className="text-white text-base font-light">Seamlessly transfer funds without the extra cost. Send and recieve money with zero bank transfer fees.</p>
+          <p className="text-white text-base font-light">
+            Seamlessly transfer funds without the extra cost. Send and recieve
+            money with zero bank transfer fees.
+          </p>
         </div>
       </div>
+
+      {/* What we offer */}
+      <div className="py-10">
+        <div className="bg-[#48d64c] py-18">
+          <p className="text-9xl text-black w-[80%] mx-auto">
+            Smart investments, secure payments, and expert guidiance, all in one
+            place.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-center">
+        <div className="py-10 mx-auto w-[90%]">
+          <div className="flex flex-col w-[60%] ml-12">
+            <h2 className="text-7xl text-white mb-6 font-light lwading-tight">
+              Confidently Shape Your Financial Future
+            </h2>
+            <p className="text-xl text-white font-light leading-relaxed">
+              At RAFT, we empower you to confidently shape your financial
+              future. Our modern approach simplifies saving and investing,
+              making it easier than ever.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-10 w-[90%] mx-auto">
+        <div className="flex gap-6 justify-center">
+          <div className="flex flex-col w-[45%]">
+            <div className="p-6 border border-gray-700 rounded bg-base-600 bg-[#131313]">
+              <div className="pb-20">
+                <h5 className="text-3xl text-white mb-4">Spend better</h5>
+                <p className="text-white text-xl font-light">
+                  Set and achieve financial goals with ease, automate your
+                  savings, and watch your money grow without stress.
+                </p>
+              </div>
+
+              <div className="flex justify-center">
+                <Image
+                  src={spendBetter}
+                  alt="Spend Better"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col w-[45%]">
+            <div className=" p-6 border border-gray-700 rounded bg-base-600 bg-[#131313]">
+              <div className="pb-20">
+                <h5 className="text-3xl text-white mb-4">Invest better</h5>
+                <p className="text-white text-xl font-light">
+                  Set and achieve financial goals with ease, automate your
+                  savings, and watch your money grow without stress.
+                </p>
+              </div>
+
+              <div className="flex justify-center">
+                <Image
+                  src={investBetter}
+                  alt="Invest Better"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-8 w-[90%] mx-auto">
+        <div className="flex justify-between">
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-white text-7xl font-semibold">50+</p>
+            <p className="text-white text-lg fomt-light">CITIES</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-white text-7xl font-semibold">50,000+</p>
+            <p className="text-white text-lg fomt-light">TRANSACTIONS</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-white text-7xl font-semibold">3M+</p>
+            <p className="text-white text-lg fomt-light">USERS</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-white text-7xl font-semibold">5</p>
+            <p className="text-white text-lg fomt-light">USER RATINGS</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-6 mx-auto">
+        <Image
+          src={dwf}
+          alt="Drinks with friends"
+          width={2000}
+          height={848}
+          className="object-contain"
+        />
+      </div>
+
+      {/* Introducing RAFT Card */}
+      <div className="py-14 mx-auto">
+        <div className="flex flex-col gap-6 items-center justify-center">
+          <p className="text-[#48d64c] text-lg">INTRODUCTION</p>
+          <h2 className="text-7xl text-white w-[60%] text-center">
+            Introducing RAFT'S Next-Gen Cards
+          </h2>
+          <p className="text-white text-xl font-light text-center w-[44%]">
+            Discover RAFT's latest innovation - our new cards. Elevate your
+            banking experience with cutting-edge features, security, and
+            unprecedented convenience.
+          </p>
+        </div>
+      </div>
+
+      {/* RAFT Cards */}
+      <div className="py-10">
+        <div className="flex items-center justify-center">
+          <Image src={cardAtm} alt="ATM card" className="object-contain" />
+        </div>
+      </div>
+
+      <div className="py-12 w-[90%] mx-auto">
+        <div className="flex gap-10 mx-auto justify-center">
+          <div className="flex flex-col">
+            <div className="flex gap-2 mb-3">
+              <Image
+                src={cTech}
+                alt="Contactless technology"
+                className="object-contain"
+              />
+              <p className="text-white text-2xl">Contactless Technology</p>
+            </div>
+
+            <p className="text-with text-base font-light text-white">
+              Our new cards come equiqued with contactless technology, allowing
+              you to make swift, secure payments with a simple tap
+            </p>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="flex gap-2 mb-3">
+              <Image
+                src={persona}
+                alt="Personalization"
+                className="object-contain"
+              />
+              <p className="text-white text-2xl">Personalization</p>
+            </div>
+            <p className="text-with text-base text-white font-light">
+              Customize your card to reflect your unique style. Choose from a
+              range of designs that suit your personality.
+            </p>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="flex gap-2 mb-3">
+              <Image
+                src={security}
+                alt="Enhanced Security"
+                className="object-contain"
+              />
+              <p className="text-white text-2xl">Enhanced Security</p>
+            </div>
+            <p className="text-with text-base font-light text-white">
+              Your peace of mind is our priority. Our cards feature advanced
+              security measures to protect your transactions and data.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <TestimonialSection />
+      <FAQSection />
+      <Footer />
     </div>
   );
 }
