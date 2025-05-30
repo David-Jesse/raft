@@ -9,10 +9,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="text-white border-t border-gray-800">
-      <div className="w-[90%] mx-auto px-4 md:px-6 py-8 md:py-12">
+      <div className="w-[90%] mx-auto  md:px-6 py-8 md:py-12">
         {/* Logo Section */}
         <div className="mb-8 md:mb-12">
-          <div className="flex items-center gap-3">
+          <div className="flex gap-3 items-center">
             <div className="flex items-center">
               <Image
                 src={footerLogo}
@@ -20,68 +20,110 @@ export default function Footer() {
                 className="object-contain"
               />
             </div>
-            <span className="text-9xl">Raft</span>
+            <span className="md:text-9xl text-7xl">Raft</span>
           </div>
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
-          <div className="flex gap-2">
-            <div>
+        <div className="flex md:flex-row flex-col items-center justify-between">
+          <div className="flex md:gap-2 gap-3 md:w-[30%] w-[84%] items-center mb-3">
+            <div className="border border-dashed border-white rounded-lg p-4 flex items-center gap-4 mb-10 max-w-md ">
               <Image
                 src={footerQr}
                 alt="Footer Scan QR"
                 className="object-contain"
               />
-            </div>
-            <div>
-              <p className="text-xl mb-2 font-light">Scan to download App on the Playstore and Appstore.</p>
-              <div className="flex gap-3 items-center">
-                <span>
+
+              <div className="">
+                <p className="md:text-xl text-base mb-2 font-light">
+                  Scan to download App on the Playstore and Appstore.
+                </p>
+
+                <div className="flex gap-3 items-center">
                   <Image
                     src={googleStore}
                     alt="Google Store icon"
                     className="object-contain"
                   />
-                </span>
-                <span>
+
                   <Image
                     src={appleStore}
                     alt="Apple Store icon"
                     className="object-contain"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* About us */}
-          <div className="flex flex-col gap-4">
-            <h6 className="text-xl">About us</h6>
-            <Link href="#" className="text-base font-light hover:font-semibold">Our company</Link>
-            <Link href="#" className="text-base font-light hover:font-semibold">Careers</Link>
-            <Link href="#" className="text-base font-light hover:font-semibold">Press Kits</Link>
-          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 md:gap-50 gap-30 mb-10">
+            <div className="flex flex-col gap-4">
+              <h6 className="text-xl">About us</h6>
+              <Link
+                href="#"
+                className="text-base font-light hover:text-green-400 transition ease-in-out"
+              >
+                Our company
+              </Link>
+              <Link
+                href="#"
+                className="text-base font-light hover:text-green-400 transition ease-in-out"
+              >
+                Careers
+              </Link>
+              <Link
+                href="#"
+                className="text-base font-light hover:text-green-400 transition ease-in-out"
+              >
+                Press Kits
+              </Link>
+            </div>
 
-          <div className="flex flex-col gap-4">
-            <h6 className="text-xl">Legal</h6>
-            <Link href="/" className="text-base font-light hover:font-semibold">Terms of use</Link>
-            <Link href="/" className="text-base font-light hover:font-semibold">Privacy Policy</Link>
-            <Link href="/" className="text-base font-light hover:font-semibold">About us</Link>
-          </div>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-xl">Legal</h6>
+              <Link
+                href="/"
+                className="text-base font-light hover:text-green-400 transiton ease-in-out"
+              >
+                Terms of use
+              </Link>
+              <Link
+                href="/"
+                className="text-base font-light hover:text-green-400 transition ease-in-out"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/"
+                className="text-base font-light hover:text-green-400 transition ease-in-out"
+              >
+                About us
+              </Link>
+            </div>
 
-          <div className="flex flex-col gap-4">
-            <h6 className="text-xl">Support</h6>
-            <Link href="/" className="text-base font-light hover:font-semibold">Help</Link>
-            <Link href="/" className="text-base font-light hover:font-semibold">Contact us</Link>
-            <Link href="/" className="text-base font-light hover:font-semibold">FAQ</Link>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-xl">Support</h6>
+              <Link
+                href="/"
+                className="text-base font-light hover:text-green-400 transition-colors ease-in-out"
+              >
+                Contact us
+              </Link>
+              <Link
+                href="/"
+                className="text-base font-light hover:text-green-400 transition ease-in-out"
+              >
+                FAQ
+              </Link>
+            </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-6 md:pt-8 border-t border-gray-800 gap-4">
+        <div className="flex md:flex-row justify-between items-start md:items-center pt-6 md:pt-8 gap-4">
           {/* Language Selector */}
-          <button 
+          <button
             className="flex items-center gap-2 hover:text-gray-300 transition-colors"
             aria-label="Select language"
             aria-expanded="false"

@@ -99,11 +99,11 @@ const TestimonialSection = () => {
   };
 
   return (
-    <div className="bg-green-400 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-green-400  py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-7xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-7xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
             Join over 3 million
             <br />
             members
@@ -127,7 +127,7 @@ const TestimonialSection = () => {
                     <div className="flex-1 p-6 lg:p-8 hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
                       {/* Testimonial Text */}
                       <div className="mb-8">
-                        <p className="text-gray-900 text-2xl lg:text-lg leading-relaxed font-medium">
+                        <p className="text-gray-900 text-base md:text-2xl lg:text-lg leading-relaxed font-medium">
                           {testimonial.text}
                         </p>
                       </div>

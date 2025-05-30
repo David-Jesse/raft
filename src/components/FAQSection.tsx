@@ -35,9 +35,9 @@ export default function () {
   };
 
   return (
-    <div className="min-h-screen text-white py-8 md:py-16">
+    <div className=" text-white py-8 md:py-16">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <h2 className="text-8xl md:text-6xl font-light mb-8 md:mb-16 leading-tight">
+        <h2 className="text-4xl md:text-8xl font-light mb-8 md:mb-16 leading-tight">
           Frequently asked <br />
           questions
         </h2>

@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         "primary": "#2B892E", // Ensure this matches your intended color
       },
+      screens: {
+        sm: '360px',
+      }
     },
   },
   plugins: [],
