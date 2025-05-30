@@ -47,9 +47,9 @@ export default function () {
             <div className="border-b border-gray-800" key={index}>
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-betwween items-center py-6 md:py-8 text-left hover:bg-gray-900/20 transition-colors duration-200"
+                className="w-full flex justify-between items-center py-6 md:py-8 text-left hover:bg-gray-900/20 transition-colors duration-200"
               >
-                <span className="text-lg md:text-xl font-loght pr-4 leading-relaxed">
+                <span className="text-lg md:text-xl font-light pr-4 leading-relaxed">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -62,7 +62,7 @@ export default function () {
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
                   openIndex === index
-                    ? "max0h-96 opacity-100"
+                    ? "max-h-96 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >

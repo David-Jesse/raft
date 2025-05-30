@@ -86,7 +86,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col mx-auto justify-center items-center py-20">
-          <h2 className="text-white text text-4xl md:text-7xl md:w-[60%] w-full text-center mb-6">
+          <h2 className="text-white text-4xl md:text-7xl md:w-[60%] w-full text-center mb-6">
             Elevate Your Financial Journey with RAFT
           </h2>
           <p className="text-[#BDBDBD] text-base md:text-xl md:w-[50%] w-[90%] text-center">
@@ -306,12 +306,12 @@ export default function Home() {
         <div className="flex justify-between">
           <div className="flex flex-col items-center md:gap-4 gap-2">
             <p className="text-white md:text-7xl text-xl font-semibold">50+</p>
-            <p className="text-white md:text-lg text-sm fomt-light">CITIES</p>
+            <p className="text-white md:text-lg text-sm font-light">CITIES</p>
           </div>
 
           <div className="flex flex-col items-center md:gap-4 gap-2">
             <p className="text-white md:text-7xl text-xl font-semibold">50,000+</p>
-            <p className="text-white md:text-lg text-sm fomt-light">TRANSACTIONS</p>
+            <p className="text-white md:text-lg text-sm font-light">TRANSACTIONS</p>
           </div>
 
           <div className="flex flex-col items-center md:gap-4 gap-2">
@@ -384,7 +384,7 @@ export default function Home() {
               />
               <p className="text-white text-xl md:text-2xl">Personalization</p>
             </div>
-            <p className="text-with text-base text-white font-light">
+            <p className="text-white text-base font-light">
               Customize your card to reflect your unique style. Choose from a
               range of designs that suit your personality.
             </p>
