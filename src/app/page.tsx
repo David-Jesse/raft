@@ -26,7 +26,6 @@ import security from "../assets/images/security.png";
 import TestimonialSection from "@/components/TestiomonialSection";
 import Footer from "@/components/Footer";
 
-
 export default function Home() {
   return (
     <div className="bg-black min-h-screen w-full pt-20">
@@ -222,7 +221,7 @@ export default function Home() {
             <p className="text-2xl text-white">No bank transfer fees</p>
           </div>
           <p className="text-white text-base font-light">
-            Seamlessly transfer funds without the extra cost. Send and recieve
+            Seamlessly transfer funds without the extra cost. Send and receive
             money with zero bank transfer fees.
           </p>
         </div>
@@ -232,7 +231,7 @@ export default function Home() {
       <div className="py-10">
         <div className="bg-[#48d64c] py-18">
           <p className="text-9xl text-black w-[80%] mx-auto">
-            Smart investments, secure payments, and expert guidiance, all in one
+            Smart investments, secure payments, and expert guidance, all in one
             place.
           </p>
         </div>
@@ -241,7 +240,7 @@ export default function Home() {
       <div className="flex items-center">
         <div className="py-10 mx-auto w-[90%]">
           <div className="flex flex-col w-[60%] ml-12">
-            <h2 className="text-7xl text-white mb-6 font-light lwading-tight">
+            <h2 className="text-7xl text-white mb-6 font-light leading-tight">
               Confidently Shape Your Financial Future
             </h2>
             <p className="text-xl text-white font-light leading-relaxed">
@@ -311,12 +310,12 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-4">
             <p className="text-white text-7xl font-semibold">3M+</p>
-            <p className="text-white text-lg fomt-light">USERS</p>
+            <p className="text-white text-lg font-light">USERS</p>
           </div>
 
           <div className="flex flex-col items-center gap-4">
             <p className="text-white text-7xl font-semibold">5</p>
-            <p className="text-white text-lg fomt-light">USER RATINGS</p>
+            <p className="text-white text-lg font-light">USER RATINGS</p>
           </div>
         </div>
       </div>
@@ -364,9 +363,8 @@ export default function Home() {
               />
               <p className="text-white text-2xl">Contactless Technology</p>
             </div>
-
-            <p className="text-with text-base font-light text-white">
-              Our new cards come equiqued with contactless technology, allowing
+            <p className="text-white text-base font-light">
+              Our new cards come equipped with contactless technology, allowing
               you to make swift, secure payments with a simple tap
             </p>
           </div>

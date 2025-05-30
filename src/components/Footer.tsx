@@ -81,12 +81,16 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-6 md:pt-8 border-t border-gray-800 gap-4">
           {/* Language Selector */}
-          <div className="flex items-center gap-2 cursor-pointer hover:text-gray-300 transition-colors">
+          <button 
+            className="flex items-center gap-2 hover:text-gray-300 transition-colors"
+            aria-label="Select language"
+            aria-expanded="false"
+          >
             <span className="text-sm md:text-base">
               English (United Kingdom)
             </span>
-            <ChevronDown className="w-4 h-4" />
-          </div>
+            <ChevronDown className="w-4 h-4" aria-hidden="true" />
+          </button>
 
           {/* Copyright */}
           <div className="text-gray-400 text-sm md:text-base">
